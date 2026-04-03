@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+#garden {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.flower {
+  position: absolute;
+  font-size: 24px;
+  animation: bloom 1.5s ease forwards;
+}
+
+@keyframes bloom {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
